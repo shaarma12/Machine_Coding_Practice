@@ -1,11 +1,10 @@
-const empData = [
+export const empData = [
     {
         id: 1,
         firstName: "Himanshu",
         lastName: "Sharma",
         dob: "04/10/2000",
         phoneNumber: "7042981599",
-        photo: "https://avatars.githubusercontent.com/u/50957983?v=4",
     },
     {
         id: 2,
@@ -13,7 +12,6 @@ const empData = [
         lastName: "Sharma",
         dob: "16/04/2002",
         phoneNumber: "8929818752",
-        photo: "C:\Users\abc\OneDrive\Desktop\Machine_Coding_Practice\employeedetailsystem\Images\men.png",
     },
     {
         id: 2,
@@ -21,7 +19,6 @@ const empData = [
         lastName: "Sharma",
         dob: "16/04/2002",
         phoneNumber: "8929818752",
-        photo: "C:\Users\abc\OneDrive\Desktop\Machine_Coding_Practice\employeedetailsystem\Images\men.png",
     },
     {
         id: 3,
@@ -29,7 +26,6 @@ const empData = [
         lastName: "Prakash",
         dob: "06/02/1995",
         phoneNumber: "9629815851",
-        photo: "C:\Users\abc\OneDrive\Desktop\Machine_Coding_Practice\employeedetailsystem\Images\men.png",
     },
     {
         id: 4,
@@ -37,7 +33,6 @@ const empData = [
         lastName: "Chandan",
         dob: "09/08/1998",
         phoneNumber: "9541287218",
-        photo: "C:\Users\abc\OneDrive\Desktop\Machine_Coding_Practice\employeedetailsystem\Images\men.png",
     },
     {
         id: 5,
@@ -45,7 +40,6 @@ const empData = [
         lastName: "Mishra",
         dob: "26/09/2000",
         phoneNumber: "9949888727",
-        photo: "C:\Users\abc\OneDrive\Desktop\Machine_Coding_Practice\employeedetailsystem\Images\men.png",
     },
     {
         id: 6,
@@ -53,6 +47,5 @@ const empData = [
         lastName: "Bansal",
         dob: "19/02/2001",
         phoneNumber: "9529712720",
-        photo: "C:\Users\abc\OneDrive\Desktop\Machine_Coding_Practice\employeedetailsystem\Images\men.png",
     },
 ];
