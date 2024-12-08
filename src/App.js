@@ -1,9 +1,13 @@
 import React from 'react'
+import Dashboard from './Dashboard'
 
 const App = () => {
   return (
     <div>
-      <p className='text-lg font-bold text-center text-blue-600'>Hello, there get ready for some really exicting stuff!</p>
+      <p className='font-bold text-2xl text-white ml-20 mt-5'>EMPLOYEE MANAGEMENT SYSTEM</p>
+      <div>
+        <Dashboard/>
+      </div>
     </div>
   )
 }
