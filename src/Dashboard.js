@@ -16,8 +16,8 @@ const Dashboard = () => {
               </div>
         <div className='w-[70%] h-full'>
           {onclickData&&<div className='flex flex-col justify-center items-center'>
-            <img src='https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png' className='w-[15rem]' />
-            <div className='flex'>
+            {onclickData?.sex === "Male"?<img src='https://cdn-icons-png.flaticon.com/512/11498/11498755.png' className='w-[15rem] mt-12' />:<img src='https://cdn-icons-png.flaticon.com/512/11498/11498793.png' className='w-[15rem] mt-12' />}
+            <div className='flex mt-4'>
               <p className='text-white font-bold text-4xl mr-2'>{onclickData?.firstName}</p>
               <p className='text-white font-bold text-4xl'>{onclickData?.lastName}</p>
             </div>
