@@ -10,6 +10,8 @@ const AddForm = ({ setAddNew }) => {
     Designation: "",
   });
   const formRef = useRef();
+
+  // Closing of Modal form when click outside of the form.
   useEffect(() => {
     const handleClick = (e) => {
       if (formRef.current && !formRef.current.contains(e.target)) {
@@ -28,10 +30,10 @@ const AddForm = ({ setAddNew }) => {
     const { name, value } = e.target;
     setData({
       ...data,
-      [name]: value
+      [name]: value   // overriding of the data.
     });
   };
- 
+ // on-submit of the form
   const handleSubmit = (e) => {
     e.preventDefault();
     setAddNew(false)
