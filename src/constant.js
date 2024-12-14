@@ -1,6 +1,5 @@
 export const empData = [
     {
-        id: 1,
         firstName: "Himanshu",
         lastName: "Sharma",
         dob: "04/10/2000",
@@ -9,7 +8,6 @@ export const empData = [
         Designation:"Engineer"
     },
     {
-        id: 2,
         firstName: "Varun",
         lastName: "Sharma",
         dob: "16/04/2002",
@@ -18,7 +16,6 @@ export const empData = [
         Designation:"Pharmacist"
     },
     {
-        id: 3,
         firstName: "Pranjal",
         lastName: "Dhaiya",
         dob: "06/02/1995",
@@ -27,7 +24,6 @@ export const empData = [
         Designation:"Consultant"
     },
     {
-        id: 4,
         firstName: "Harish",
         lastName: "Chandan",
         dob: "09/08/1998",
@@ -36,7 +32,6 @@ export const empData = [
         Designation:"Manager"
     },
     {
-        id: 5,
         firstName: "Komal",
         lastName: "Mishra",
         dob: "26/09/2000",
@@ -45,7 +40,6 @@ export const empData = [
         Designation:"Nurse"
     },
     {
-        id: 6,
         firstName: "Tushar",
         lastName: "Bansal",
         dob: "19/02/2001",
@@ -54,7 +48,6 @@ export const empData = [
         Designation:"Doctor"
     },
     {
-        id: 7,
         firstName: "Shikha",
         lastName: "Kaur",
         dob: "28/11/2000",
