@@ -10,7 +10,7 @@ const App = () => {
         <p className='font-bold text-3xl text-white ml-20'>EMPLOYEE MANAGEMENT SYSTEM</p>
         <button className='mr-28 bg-red-500 text-white text-xl font-bold px-5 py-2 rounded-full hover:scale-y-110'onClick={()=>setAddNew(true)}>ADD</button>
       </div>
-      {addNew&&<AddForm/>}
+      {addNew && <AddForm setAddNew={setAddNew}/>}
       <div>
         <Dashboard/>
       </div>

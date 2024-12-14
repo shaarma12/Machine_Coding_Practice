@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 
-const AddForm = () => {
+const AddForm = ({setAddNew}) => {
+  const formRef = useRef();
+  useEffect(() => {
+    const handleClick = (e) => {
+      if (formRef.current && !formRef.current.contains(e.target)) {
+        setAddNew(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClick);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClick);
+    };
+
+  },[setAddNew])
   return (
     <div className='fixed inset-0 flex justify-center items-center bg-black bg-opacity-40'>
-      <div className='relative bg-[#999999ab] w-[37rem] rounded-lg shadow-lg shadow-black'> 
+      <div className='relative bg-[#999999ab] w-[37rem] rounded-lg shadow-lg shadow-black border border-black' ref={formRef}> 
         <form className='flex justify-center items-center'>
           <div className='m-4'>
           <div className='w-full mt-5'>
