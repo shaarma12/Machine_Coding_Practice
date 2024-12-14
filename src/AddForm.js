@@ -34,9 +34,36 @@ const AddForm = ({ setAddNew }) => {
     });
   };
  // on-submit of the form
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
-    setAddNew(false)
+    setAddNew(false);
+    setTimeout(() => alert("New User Added SuccessFully!"), 500);
+
+    //when we have to store it through POST API.
+
+    // try {
+    //   const response = await fetch('https://your-api-endpoint.com/employees', {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "applicaton/json",
+    //     },
+    //     body: JSON.stringify(data),
+    //   });
+
+    //   if (response.ok)
+    //   {
+    //     const result = await response.json();
+    //     setData(false);
+    //     alert("New User Added SuccessFully!");
+    //     console.log(result);
+    //   }
+    //   else {
+    //     console.error("Something went Wrong!");
+    //     alert("User is not Added!");
+    //   }
+    // } catch (error) {
+    //   console.log(error);
+    // }
   };
 
   return (
