@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-const AddForm = ({ setAddNew }) => {
+const AddForm = ({ setAddNew,handleNewEmpData }) => {
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
@@ -36,6 +36,7 @@ const AddForm = ({ setAddNew }) => {
  // on-submit of the form
   const handleSubmit = async(e) => {
     e.preventDefault();
+    handleNewEmpData(data);
     setAddNew(false);
     setTimeout(() => alert("New User Added SuccessFully!"), 500);
 

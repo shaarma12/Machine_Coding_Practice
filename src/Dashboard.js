@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import EmpCard from './EmpCard'
-import { empData } from './constant'
 
-const Dashboard = () => {
+const Dashboard = ({empData}) => {
   const [onclickData, setonclickData] = useState(null);
   return (
       <div className='flex justify-center items-center'>
