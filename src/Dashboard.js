@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import EmpCard from './EmpCard'
 
-const Dashboard = ({empData}) => {
+const Dashboard = ({empData,removeEmp}) => {
   const [onclickData, setonclickData] = useState(null);
   return (
       <div className='flex justify-center items-center'>
           <div className='flex border-[1px] border-white w-[86rem] h-[38rem] mt-4'>
               <div className='w-[30%] h-full overflow-y-scroll scroll-smooth'>
                   {empData.map((i) => {
-                    return <EmpCard key={i?.phoneNumber} data={i} onClick={()=>setonclickData(i)} />
+                    return <EmpCard key={i?.phoneNumber} data={i} onClick={() => setonclickData(i)} removeEmp={removeEmp} />
                   })
                   }
               </div>

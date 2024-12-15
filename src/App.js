@@ -8,6 +8,10 @@ const App = () => {
   const handleNewEmpData = (newEmpData) => {
     setEmpData((prevData) => [...prevData, newEmpData]);
   };
+  const removeEmp = (phoneNumber) => {
+    const newData = empData.filter((emp) => emp.phoneNumber !== phoneNumber);
+    setEmpData(newData);
+  };
   return (
     <div>
       <div className='flex mt-5 justify-between'>
@@ -16,7 +20,7 @@ const App = () => {
       </div>
       {addNew && <AddForm setAddNew={setAddNew} handleNewEmpData={handleNewEmpData}/>}
       <div>
-        <Dashboard empData={empData}/>
+        <Dashboard empData={empData} removeEmp={removeEmp}/>
       </div>
     </div>
   )
